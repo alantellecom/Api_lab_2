@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id cardapio:</strong>
+  <%= @pedido.cardapio.item %>
+</p>
+
+<p>
+  <strong>Id cliente:</strong>
+  <%= @pedido.cliente.nome %>
+</p>
+
+<%= link_to 'Edit', edit_pedido_path(@pedido) %> |
+<%= link_to 'Back', pedidos_path %>
